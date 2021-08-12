@@ -18,7 +18,7 @@ then
     echo '        "keepalive": true,' >> "$FILE"
     echo '        "nicehash": false' >> "$FILE"
     echo '    },' >> "$FILE"
-    echo ']' >> "$FILE"
+    echo '],' >> "$FILE"
     echo '"pause-on-battery": true,' >> "$FILE"
     echo '"priority": 1,' >> "$FILE"
     echo '"max-threads-hint": 25,' >> "$FILE"
