@@ -21,4 +21,4 @@ Then you can install:
 
  - `# apt install xmrig-service-root` to run xmrig in service as root, expect better performance
  - `# apt install xmrig-service-nonroot` to run xmrig as a restricted user `xmrig`
- - `# apt install xmrig-sample-config` to install sample config to `/etc/xmrig.conf`, it is written only if this file doesn't exist.
+ - `# apt install xmrig-sample-config` to install sample config to `/etc/xmrig.json`, it is written only if this file doesn't exist.
