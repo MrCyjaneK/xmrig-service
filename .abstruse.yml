@@ -4,4 +4,4 @@ matrix:
   - env: NAME=xmrig-service-nonroot
   - env: NAME=xmrig-service-root
 script:
-  - cd $NAME && checkinstall --type=debian --install=no --default --pkgname="$NAME" --pkgversion="1.0.0" --arch=all --pakdir="/apt" --maintainer=cyjan@mrcyjanek.net --strip=no --stripso=no
+  - cd $NAME && checkinstall --type=debian --install=no --default --pkgname="$NAME" --pkgversion="1.0.1" --arch=all --pakdir="/apt" --maintainer=cyjan@mrcyjanek.net --strip=no --stripso=no
