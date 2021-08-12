@@ -1,0 +1,9 @@
+adduser \
+    --home=/var/lib/xmrig \
+    --disabled-password \
+    --disabled-login \
+    --system \
+    xmrig
+addgroup --system xmrig-service-nonroot
+systemctl daemon-reload
+systemctl enable --now xmrig-service-nonroot.service

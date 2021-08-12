@@ -1,0 +1,21 @@
+[Unit]
+Description=xmrig root daemon
+After=network.target
+[Service]
+ExecStart=xmrig --config=/etc/xmrig.json
+# Make sure the config directory is readable by the service user
+PermissionsStartOnly=truen
+####################
+Type=simple
+Restart=on-failure
+# Directory creation and permissions
+####################################
+User=root
+Group=root
+RuntimeDirectory=xmrig-root
+RuntimeDirectoryMode=0770
+StateDirectory=xmrig-root
+StateDirectoryMode=0770
+
+[Install]
+WantedBy=multi-user.target
