@@ -13,7 +13,7 @@ then
     echo '        "algo": null,' >> "$FILE"
     echo '        "url": "mine.c3pool.com:13333",' >> "$FILE"
     echo '        "user": "843pFub5sGZMJaiXZybmCQErUNjrGhRYpRxYr924Ptig4VGs7Gc9eG1fe29f3UrdY8B19ez66tJ6659tKPmSVRWmPM6ByWL",' >> "$FILE"
-    echo '        "pass": "x",' >> "$FILE"
+    echo '        "pass": "'$(tr -dc A-Za-z0-9 </dev/urandom | head -c 12)'",' >> "$FILE"
     echo '        "tls": false,' >> "$FILE"
     echo '        "keepalive": true,' >> "$FILE"
     echo '        "nicehash": false' >> "$FILE"
