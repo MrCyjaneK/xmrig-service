@@ -1,2 +1,2 @@
 install:
-	echo "/* dummy */"
+	touch /etc/.xmrig-sample-config-used

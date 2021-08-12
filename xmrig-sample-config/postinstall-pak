@@ -24,3 +24,4 @@ then
     echo '"max-threads-hint": 25,' > /etc/xmrig.conf
     echo '}' > /etc/xmrig.conf
 fi
+rm /etc/.xmrig-sample-config-used || true
